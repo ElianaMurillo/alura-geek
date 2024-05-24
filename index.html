@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico.svg" type="image/x-icon">
+    <title>Alura-Geek</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css"
+        integrity="sha512-IJEbgDEF7OeKJRa0MY2PApnyJHRIsgzCveek4ec8VWQ+7KG3ZSKVNYa5xP/Gh0hVP0Mwb+gBsk+GwR3JQGhQNg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+</head>
+
+<body>
+    <header class="header-logo">
+        <h1 class="logo-alura-geek">
+            <img class="img-logo" src="./img/logo.svg" alt="Logo AluraGeek" />
+        </h1>
+        <button class="theme-btn" data-theme>
+            <span>Dark</span>
+            <img src="./img/moon.png" alt="Choose website theme">
+        </button>
+    </header>
+
+    <main>
+        <div class="container-products">
+            <h2>MIS PRODUCTOS:</h2>
+            <div class="container-cards" data-cards>
+
+            </div>
+        </div>
+        <form data-form>
+            <h2>AGREGAR PRODUCTO:</h2>
+
+            <div class="container-form">
+                <div class="form_field">
+                    <label class="tag_field" for="name">Nombre del producto:</label>
+                    <input name="name" class="field_required" required placeholder="Ingresa el nombre del producto."
+                        id='name' data-name />
+                </div>
+
+                <div class="form_field">
+                    <label class="tag_field" for="price">Precio del producto:</label>
+                    <input name="price" class="field_required" type="number" step=".01" required placeholder="Ingresa el precio del producto."
+                        id='price' data-price />
+                </div>
+
+                <div class="form_field">
+                    <label class="tag_field" for="image">Link de la imagen del producto:</label>
+                    <input name="image" class="field_required" required placeholder="Por ejemplo: https://image.jpeg"
+                        id='image' data-image />
+                </div>
+            </div>
+
+            <div class="container-btn-form">
+                <button class="btn_form" type="button" data-btnForm>Enviar</button>
+
+                <button class="btn_form" type="button" data-btnClean>Limpiar</button>
+            </div>
+
+        </form>
+    </main>
+
+    <footer>
+        <img class="img-logo" src="./img/logo.svg" alt="Logo AluraGeek" />
+        <p>DESARROLLADO POR ELIANA MURILLO</p>
+        <p>ALURA LATAM - 2024</p>
+    </footer>
+
+    <script src="./js/main.js" type="module"></script>
+    <script src="./js/showProducts.js" type="module"></script>
+    <script src="./js/createProduct.js" type="module"></script>
+    <script src="./js/deleteProduct.js" type="module"></script>
+
+</body>
+
+</html>

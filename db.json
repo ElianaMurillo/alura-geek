@@ -1,0 +1,28 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Batman",
+      "price": "10.00",
+      "image": "https://toogeek.co/wp-content/uploads/2020/11/889698114967.jpeg"
+    },
+    {
+      "id": "3",
+      "name": "Captain America",
+      "price": "7.00",
+      "image": "https://images.stockx.com/images/Funko-Pop-Marvel-Avengers-Age-of-Ultron-Captain-America-Figure-67.jpg?fit=fill&bg=FFFFFF&w=576&h=384&fm=avif&auto=compress&dpr=2&trim=color&updated_at=1652466242&q=60"
+    },
+    {
+      "id": "4",
+      "name": "Iron Man",
+      "price": "9.00",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnPNDicNt_LgYXFeYPwsjzP4MxymNmbFg2qA&s"
+    },
+    {
+      "id": "01af",
+      "name": "Captain Marvel",
+      "price": "15.00",
+      "image": "https://toogeek.co/wp-content/uploads/2021/06/889698552356.jpg"
+    }
+  ]
+}

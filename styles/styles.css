@@ -1,0 +1,232 @@
+:root {
+    font-size: 16px;
+
+    --principal-font: "Press Start 2P", system-ui;
+    --secondary-font: "IBM Plex Mono", monospace;
+
+    --bg-primary-light: #FFFFFF;
+    --bg-secondary-light: #5300C8;
+
+    --bg-primary-dark: #AAAAAA;
+    --bg-secondary-dark: #03318C;
+
+    --font-color-primary-light: #000000;
+    --font-color-secondary-light: #FFFFFF;
+
+    --font-color-primary-dark: #FFFFFF;
+    --font-color-secondary-dark: #AAAAAA;
+}
+
+.light-theme {
+    --bg-primary: var(--bg-primary-light);
+    --bg-secondary: var(--bg-secondary-light);
+
+    --font-color-primary: var(--font-color-primary-light);
+    --font-color-secondary: var(--font-color-secondary-light);
+}
+
+.dark-theme {
+    --bg-primary: var(--bg-primary-dark);
+    --bg-secondary: var(--bg-secondary-dark);
+
+    --font-color-primary: var(--font-color-primary-dark);
+    --font-color-secondary: var(--font-color-secondary-dark);
+}
+
+body {
+    font-family: var(--secondary-font);
+    background-color: var(--bg-primary);
+}
+
+header {
+    background-color: var(--bg-secondary);
+    display: flex;
+    justify-content: space-between;
+    padding: 0.7rem;
+}
+
+.logo-alura-geek {
+    display: flex;
+    align-items: center;
+}
+
+.logo-alura-geek img {
+    width: 15rem;
+}
+
+.theme-btn {
+    display: flex;
+    align-items: center;
+    font-weight: 800;
+    width: 7rem;
+    justify-content: space-around;
+    padding: 0.2rem;
+    border: 0.2rem solid var(--bg-primary);
+    border-radius: 5rem;
+    background-color: var(--bg-primary);
+    cursor: pointer;
+}
+
+.theme-btn img {
+    width: 1.3rem;
+}
+
+main {
+    display: flex;
+}
+
+.not-products {
+    color: var(--font-color-primary);
+    padding-top: 15%;
+}
+
+.container-products {
+    width: 60%;
+    padding: 7% 2%;
+}
+
+h2 {
+    font-family: var(--principal-font);
+    text-align: center;
+    padding-bottom: 2%;
+}
+
+.container-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    padding: 2% 5%;
+    justify-items: center;
+}
+
+.card {
+    background-color: var(--bg-secondary);
+    color: var(--font-color-secondary);
+    width: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.6rem;
+    border-radius: 1rem;
+    border: 0.2rem solid var(--font-color-primary);
+}
+
+.card-image-product {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 1rem;
+    border: 0.2rem solid var(--font-color-primary);
+}
+
+.card-container-info {
+    width: 100%;
+    padding-top: 5%;
+}
+
+.card-container-value {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10%;
+    font-weight: 700;
+}
+
+.card-container-value img {
+    cursor: pointer;
+}
+
+form {
+    padding: 7% 0;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-form {
+    padding: 5% 0;
+}
+
+.form_field {
+    display: flex;
+    flex-direction: column;
+    padding: 2% 0;
+}
+
+.field_required {
+    padding: 0.6rem;
+    border-radius: 1rem;
+    margin: 2% 0;
+}
+
+.btn_form {
+    background-color: var(--bg-secondary);
+    width: 7rem;
+    border-radius: 2rem;
+    padding: 0.5rem;
+    color: var(--font-color-secondary);
+    border: 0.2rem solid var(--font-color-primary);
+    cursor: pointer;
+}
+
+footer {
+    background-color: var(--bg-secondary);
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    align-items: center;
+    padding: 0.7rem;
+    font-weight: 600;
+}
+
+footer img {
+    width: 12rem;
+}
+
+footer p {
+    font-size: 0.4rem;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+
+    html, body {
+        overflow-x: hidden;
+    }
+
+    main {
+        display: block;
+    }
+
+    .container-products {
+        width: 100%;
+        padding: 10% 0;
+    }
+
+    .container-cards {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1rem;
+
+    }
+    
+    .card {
+        width: 7rem;
+        border: 0.1rem solid var(--font-color-primary);
+    }
+
+    .card-image-product {
+        width: 7rem;
+        height: 7rem;
+        border: 0.1rem solid var(--font-color-primary);
+    }
+
+    form {
+        width: 100%;
+        padding-bottom: 7%;
+    }
+
+    .btn_form {
+        border: 0.1rem solid var(--font-color-primary);
+    }
+
+}
